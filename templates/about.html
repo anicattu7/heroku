@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %} About {% endtitle %}
+{% block content %}
+<p>More about me</p>
+{% if cities %}
+
+<ul>
+{% for city in cities %}
+    <li>{{city}}</li>
+{% endfor %}
+</ul>
+
+{% else %}
+<p>No cities to print</p>
+{% endif %}
+
+{% endblock content %}
